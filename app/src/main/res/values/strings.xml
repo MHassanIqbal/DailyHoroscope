@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Design Horoscope</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_reminder">Reminders</string>
+    <string name="title_activity_second">secondActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Frsgments of second Activity -->
+    <string name="yesterday_fragment">yesterday</string>
+    <string name="today_fragment">Today</string>
+    <string name="tomorrow_fragment">Tomorrow</string>
+
+    <!-- TODO: Activity Three -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main3">Reminders</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="msg_no_notes">No notes found!</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+
+    <string name="privacy_policy">\n\n
+        <b>Privacy Policy:</b>\n\n
+        1: We did not Collect any unnecessary Data.\n
+        2: All permissions are only for user Benefits.\n\n\n
+        <b>About Application:</b>-\n\n
+        Using This application user can view three days (Yesterday, Today and Tomorrow) horoscope and can also set
+        reminders at any time they want.\n\n\n
+        Please accept to proceed further.\n
+        Thanks For Installing this Application.
+    </string>
+    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

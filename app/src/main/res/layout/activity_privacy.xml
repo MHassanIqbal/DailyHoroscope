@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#33333D"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Terms and Conditions"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <ScrollView
+android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_above="@id/img"
+        android:paddingBottom="@dimen/activity_margin"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/cardview_light_background"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onDeclineClick"
+        android:src="@drawable/decline" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onAcceptClick"
+        android:src="@drawable/accept"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

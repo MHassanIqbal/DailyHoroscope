@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Today"
+    android:background="#33333D">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    tools:ignore="RtlCompat"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:id="@+id/imageFirst"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    tools:ignore="RtlCompat"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/compatibilityView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/moodView"
+                        android:layout_below="@+id/todayView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/colorView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/luckyTimeView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/luckyNumView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/todayView"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal|center"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <!--<ImageView-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/FavImage"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:layout_gravity="center_horizontal|right|center"-->
+            <!--app:srcCompat="@drawable/ic_favorite_black_24dp"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/andText"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="@color/cardview_light_background"-->
+                    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>-->
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageSecond"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:foregroundGravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+</FrameLayout>
